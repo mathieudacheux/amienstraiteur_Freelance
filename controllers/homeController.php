@@ -10,9 +10,6 @@ require_once(__DIR__ . '/../models/Dish.php');
 
 // Variables
 
-echo '<pre>' , var_dump(Dish::getLast('starter')) , '</pre>';
-die();
-
 // Appel des vues
 
 include(__DIR__.'/../views/templates/header.php');
