@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$order->create();
 		}
 		$pdo->commit();
-		$reservation->create();
+
 		SessionFlash::set('added', 'Votre réservation a bien été prise en compte.');
 		header('Location: /');
 		exit;

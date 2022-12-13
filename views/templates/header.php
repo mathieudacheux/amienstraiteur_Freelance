@@ -78,10 +78,10 @@
                 </li>
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/controllers/homeController.php">Accueil</a>
+                        <a class="nav-link" href="/accueil">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/controllers/dishesController.php">Plats</a>
+                        <a class="nav-link" href="/plats">Plats</a>
                     </li>
                 </div>
             </ul>
@@ -95,7 +95,7 @@
                         <a class="nav-link" href="/commande">Commander</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#gtco-reservation">Contact</a>
+                        <a class="nav-link" href="/accueil#gtco-reservation">Contact</a>
                     </li>
                 </div>
             </ul>

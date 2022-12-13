@@ -11,7 +11,7 @@
                             Quel est votre besoin ?
                         </h3>
                     </div>
-                    <form method="post" action="">
+                    <form method="post" action="/commande">
 
                         <div class="row">
                             <div class="col-md-6 form-group">
