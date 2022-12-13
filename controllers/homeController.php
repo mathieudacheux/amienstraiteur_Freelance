@@ -4,6 +4,10 @@
 
 // Appel des classes
 
+require_once(__DIR__ . '/../models/Dish.php');
+
+require_once(__DIR__ . '/../models/Dish.php');
+
 
 echo '<pre>' , var_dump() , '</pre>';
 die();
