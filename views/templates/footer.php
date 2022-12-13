@@ -3,16 +3,13 @@
          <div class="row">
          	<div class="col-lg-4">
          		<div class="footer-widget pr-lg-5 pr-0">
-         			<img src="../public/assets/img/logo.png" class="img-fluid footer-logo mb-3" alt="">
+         			<img src="../public/assets/icons/logo.png" class="img-fluid footer-logo mb-3" alt="">
 	         		<p>70 Rue des Jacobins, 80000 Amiens</p>
                     <p>Amiens Traiteur</p>
                     <p><a href="tel:0360604941">03 60 60 49 41</a></p>
 	         		<nav class="nav nav-mastfoot justify-content-start">
 		                <a class="nav-link" href="#">
 		                	<i class="fab fa-facebook-f"></i>
-		                </a>
-		                <a class="nav-link" href="#">
-		                	<i class="fab fa-twitter"></i>
 		                </a>
 		                <a class="nav-link" href="#">
 		                	<i class="fab fa-instagram"></i>
@@ -39,19 +36,16 @@
 
          	<div class="col-lg-4">
          		<div class="footer-widget pl-lg-5 pl-0">
-         			<h4>Newsletter</h4>
-	         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-	         		<form id="newsletter">
-						<div class="form-group">
-							<input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Enter email">
-						</div>
-						<button type="submit" class="btn btn-primary w-100">Submit</button>
-					</form>
+         			<h4>Label</h4>
+	         		<p>Nous certifions que notre cuisine est Halal,
+	         		en accord avec les normes de l'Organisation Islamique de France</p>
+	         		<img src="../public/assets/icons/halal.png" class="img-fluid footer-logo mb-3" alt="Certification halal">
          		</div>
          		
          	</div>
          	<div class="col-md-12 d-flex align-items-center">
          		<p class="mx-auto text-center mb-0">Copyright 2022 - Amiens Traiteur</p>
+				<p class="mx-auto text-center mb-0"><a href="/controllers/legalController.php">Mentions Légales</a></p>
          	</div>
             
         </div>
