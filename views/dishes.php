@@ -13,6 +13,12 @@
                     </div>  
                 </div>
             </div>
+            <div class="col-12 menu-wrap text-center py-3">
+                <?php for($i = $firstDishType ; $i < $typesOfDishes ; $i++) : ?>
+                    <?php $dishTypeName = Dish::dishTypeName($i) ?>
+                        <a href="#<?= $dishTypeName ?>" class="btn btn-primary btn-outline-primary btn-lg m-2"><?= ucfirst($dishTypeName) ?></a>
+                <?php endfor; ?>
+            </div>
             <div class="row">
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">

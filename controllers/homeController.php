@@ -1,12 +1,12 @@
 <?php
 
-// Appel des configurations
-
 // Appel des classes
-
-// Appel des fonctions
+require_once(__DIR__.'/../models/Dish.php');
 
 // Variables
+$starters = Dish::getLast('starters');
+$dishes = Dish::getLast('dishes');
+$desserts = Dish::getLast('desserts');
 
 // Appel des vues
 
