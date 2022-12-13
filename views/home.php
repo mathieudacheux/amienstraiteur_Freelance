@@ -155,7 +155,7 @@
                             Amiens traiteur
                         </span>
                         <h2>
-                            Nos menus
+                            Nos plats
                         </h2>
                     </div>  
                 </div>
@@ -165,6 +165,7 @@
                     <div class="heading-menu">
                         <h3 class="text-center mb-5">Entrées</h3>
                     </div>
+                    <?php ?>
                     <div class="menus d-flex align-items-center">
                         <div class="menu-img rounded-circle">
                             <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">

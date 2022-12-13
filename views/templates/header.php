@@ -78,10 +78,10 @@
                 </li>
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/controllers/homeController.php">Accueil</a>
+                        <a class="nav-link" href="/">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/controllers/dishesController.php">Plats</a>
+                        <a class="nav-link" href="/menu">Plats</a>
                     </li>
                 </div>
             </ul>

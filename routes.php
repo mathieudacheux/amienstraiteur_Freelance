@@ -3,7 +3,7 @@
 require_once __DIR__.'/router.php';
 any('/accueil', 'controllers/homeController.php');
 get('/', 'controllers/homeController.php');
-get('/menu', 'controllers/menuCtrl.php');
+get('/menu', 'controllers/dishesController.php');
 get('/commentaires', 'controllers/reviewCtrl.php');
 get('/galerie', 'controllers/galeryCtrl.php');
 get('/getDishesAjax', 'helpers/ajax/dishes.php');
