@@ -64,8 +64,8 @@
 	<div class="boxed-page">
 		<nav id="navbar-header" class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-brand col-3 p-0 only-mobile" href="/">
-            <img src="../public/assets/icons/logoMobile.png" alt="Logo de Amiens traiteur">
+        <a class="navbar-brand col-3 p-0 only-mobile" href="/controllers/homeController.php">
+            <img src="../public/assets/icons/logoMobile.png" alt="Logo de l'entreprise Amiens Traiteur">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="lnr lnr-menu"></span>
@@ -78,7 +78,7 @@
                 </li>
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Accueil</a>
+                        <a class="nav-link" href="/controllers/homeController.php">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/controllers/dishesController.php">Plats</a>
@@ -86,8 +86,8 @@
                 </div>
             </ul>
             
-            <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
-                <img src="../public/assets/icons/logo.png" alt="">
+            <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="/controllers/homeController.php">
+                <img src="../public/assets/icons/logo.png" alt="Logo de l'entreprise Amiens Traiteur">
             </a>
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
