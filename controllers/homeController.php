@@ -4,6 +4,9 @@
 
 // Appel des classes
 
+
+echo '<pre>' , var_dump() , '</pre>';
+die();
 // Appel des fonctions
 
 // Variables
