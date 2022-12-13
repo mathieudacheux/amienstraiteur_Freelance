@@ -10,7 +10,7 @@ require_once(__DIR__ . '/../models/Dish.php');
 
 // Variables
 
-echo '<pre>' , var_dump(Dish::getLast('5')) , '</pre>';
+echo '<pre>' , var_dump(Dish::getLast('starter')) , '</pre>';
 die();
 
 // Appel des vues
