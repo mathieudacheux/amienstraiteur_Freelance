@@ -92,7 +92,7 @@
             <ul class="navbar-nav d-flex justify-content-between">
                 <div class="d-flex flex-lg-row flex-column">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/controllers/orderController.php">Commander</a>
+                        <a class="nav-link" href="/commande">Commander</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#gtco-reservation">Contact</a>
