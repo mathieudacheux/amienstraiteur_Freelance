@@ -4,9 +4,14 @@
 
 // Appel des classes
 
+require_once(__DIR__ . '/../models/Dish.php');
+
 // Appel des fonctions
 
 // Variables
+
+echo '<pre>' , var_dump(Dish::getLast('5')) , '</pre>';
+die();
 
 // Appel des vues
 

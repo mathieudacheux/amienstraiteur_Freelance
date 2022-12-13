@@ -2,11 +2,11 @@
 
 require_once __DIR__.'/router.php';
 any('/accueil', 'controllers/homeController.php');
-get('/', 'controllers/homeController.php');
-get('/plats', 'controllers/dishesController.php');
-get('/commentaires', 'controllers/reviewCtrl.php');
-get('/galerie', 'controllers/galeryCtrl.php');
-get('/getDishesAjax', 'helpers/ajax/dishes.php');
+any('/', 'controllers/homeController.php');
+any('/plats', 'controllers/dishesController.php');
+any('/commentaires', 'controllers/reviewCtrl.php');
+any('/galerie', 'controllers/galeryCtrl.php');
+any('/getDishesAjax', 'helpers/ajax/dishes.php');
 
 // Page de commande
 any('/commande', 'controllers/orderController.php');
