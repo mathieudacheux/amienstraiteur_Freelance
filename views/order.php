@@ -1,4 +1,4 @@
-<section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(../public/assets/img/reservation-bg.jpg);">
+<section class="bg-fixed bg-white section-padding overlay" style="background-image: url(../public/assets/img/reservation-bg.jpg); width: auto;">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -12,7 +12,6 @@
                         </h3>
                     </div>
                     <form method="post" action="/commande">
-
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Nom*" value="<?= $lastname ?? '' ?>" required pattern="^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$">
@@ -117,8 +116,6 @@
                 </div>
             </div>
         </div>
-        
-    </div>
 </section>
 
 <script src="../../public/js/orderForm.js"></script>
