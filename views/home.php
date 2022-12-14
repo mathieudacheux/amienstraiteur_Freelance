@@ -271,10 +271,10 @@
         <div class="section-content">
             <div class="heading-section text-center">
                 <span class="subheading">
-                    Specialties
+                    Amiens traiteur
                 </span>
                 <h2>
-                    Our Team
+                    Notre équipe
                 </h2>
             </div>
             <div class="row">
