@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$dishId = filter_input(INPUT_POST, 'dishList', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
 	$quantity = filter_input(INPUT_POST, 'quantity', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
 
-	foreach ($slots as $key => $slot) {
+	foreach ($hours as $key => $slot) {
 		if ($time == $key) {
 			$datetime = $date . ' ' . $slot;
 		}

@@ -12,7 +12,6 @@ require_once(__DIR__ . '/../../helpers/SessionFlash.php');
 // }
 $user = new stdClass();
 $user->id = 7;
-
 $_SESSION['user'] = $user;
 
 // ###############################################################################
@@ -156,7 +155,7 @@ else if ($_SERVER['REQUEST_URI'] == '/admin/menu/edit/active/' . $id) {
 		exit();
 	}
 
-	$dishUpdate = new Dish($dish->title, $dish->price, $dish->description, $_SESSION['user']->id, $dish->id_dishes_types, $dish->image, $active, $dish->togo);
+	$dishUpdate = new Dish($dish->title, $dish->price, $dish->description, $dish->id_dishes_types, $dish->image, $active, $dish->togo);
 	$dishUpdate->update($id);
 
 	if ($active == 1) {
@@ -200,7 +199,7 @@ else if ($_SERVER['REQUEST_URI'] == '/admin/menu/edit/' . $id) {
 
 		if (empty($errors)) {
 			// Met à jour le plat
-			$dishUpdated = new Dish($title, $price, $description, $_SESSION['user']->id,  $dish->id_dishes_types, $dish->image, $dish->active, $toGo);
+			$dishUpdated = new Dish($title, $price, $description,  $dish->id_dishes_types, $dish->image, $dish->active, $toGo);
 			$dishUpdated->update($id);
 
 			// Redirige vers la page des plats
@@ -249,7 +248,7 @@ else if ($_SERVER['REQUEST_URI'] == '/admin/menu/edit/img/' . $id) {
 			SessionFlash::set('error', 'L\'image n\'a pas pu être modifiée.');
 		}
 	} else {
-		$dishUpdated = new Dish($dish->title, $dish->price, $dish->description, $_SESSION['user']->id,  $dish->id_dishes_types, 2, $dish->active, $dish->togo);
+		$dishUpdated = new Dish($dish->title, $dish->price, $dish->description, $dish->id_dishes_types, 2, $dish->active, $dish->togo);
 		$dishUpdated->update($id);
 		$target_file = strtolower(str_replace(' ', '', $dish->id)) . '.' . pathinfo($_FILES["img"]["name"], PATHINFO_EXTENSION);
 		$target_path = $target_dir . $target_file;

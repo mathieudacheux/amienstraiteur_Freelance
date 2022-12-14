@@ -168,7 +168,7 @@
 		public function update($id):bool {
 			$query = 
 			"UPDATE `dishes` 
-			SET `title` = :title, `price` = :price, `description` = :description, `active` = :active, `id_dishes_types` = :id_dishes_types, `image` = :image 
+			SET `title` = :title, `price` = :price, `description` = :description, `active` = :active, `id_dishes_types` = :id_dishes_types, `image` = :image, `togo` = :togo 
 			WHERE `id` = :id;";
 
 			$sth = $this->pdo->prepare($query);
@@ -178,6 +178,7 @@
 			$sth->bindValue(':description', $this->description);
 			$sth->bindValue(':active', $this->active, PDO::PARAM_INT);
 			$sth->bindValue(':image', $this->image, PDO::PARAM_INT);
+			$sth->bindValue(':togo', $this->togo, PDO::PARAM_INT);
 			$sth->bindValue(':id_dishes_types', $this->id_dishes_types, PDO::PARAM_INT);
 			$sth->bindValue(':id', $id, PDO::PARAM_INT);
 

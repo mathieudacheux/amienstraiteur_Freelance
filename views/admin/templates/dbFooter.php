@@ -1,4 +1,4 @@
 	</main>
-	<script src="../../../public/assets/js/menuBurgerDB.js"></script>
+	<script src="../../../public/js/menuBurgerDB.js"></script>
 </body>
 </html>

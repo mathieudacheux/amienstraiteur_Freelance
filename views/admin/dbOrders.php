@@ -106,4 +106,4 @@
 <?php $message = SessionFlash::get('error') ?>
 <?= ($message == '') ? '' : '<div class="messageContainer"><div class="errorMessage">'.$message.'</div></div>'; ?>
 
-<script src="../../public/assets/js/confirmOrderDelete.js"></script>
+<script src="../../public/js/confirmOrderDelete.js"></script>

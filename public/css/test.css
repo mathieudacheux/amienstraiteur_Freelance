@@ -8,6 +8,11 @@
 	src: url('/public/assets/fonts/Montserrat/Regular.ttf');
 }
 
+@font-face {
+	font-family: 'DancingScript';
+	src: url('/public/assets/fonts/DancingScript/Regular.ttf');
+}
+
 *, ::before, ::after {
 	margin : 0;
 	padding : 0;
@@ -99,10 +104,11 @@ main {
 }
 
 .sidebarLogo {
-	font-family: 'UnicaOne';
-	font-size: 2rem;
+	font-family: 'DancingScript';
+	font-size: var(--title-font-size);
 	font-weight: var(--logo-weight);
 	color: var(--tertiary-color);
+	text-align: center;
 }
 
 .sidebarLogo a {
