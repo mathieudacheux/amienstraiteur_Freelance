@@ -25,3 +25,12 @@
     height: 30px;
     color: var(--fontColorLight);
 }
+
+.addDish {
+    cursor: pointer;
+}
+
+.del svg {
+    width: 15px;
+    height: 15px;
+}
