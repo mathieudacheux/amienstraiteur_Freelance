@@ -7,14 +7,13 @@
 		private string $price;
 		private string $description;
 		private int $active;
-		private int $id_users;
 		private int $id_dishes_types;
 		private int $image;
 		private int $togo;
 
 		private PDO $pdo;
 
-		public function __construct($title, $price, $description, $id_users, $id_dishes_types, $image, $active = 1, $togo = 0) {
+		public function __construct($title, $price, $description, $id_dishes_types, $image, $active = 1, $togo = 0) {
 
 			$this->pdo = Database::getInstance();
 
@@ -24,7 +23,6 @@
 			$this->active = $active;
 			$this->image = $image;
 			$this->togo = $togo;
-			$this->id_users = $id_users;
 			$this->id_dishes_types = $id_dishes_types;
 		}
 
@@ -39,9 +37,6 @@
 		}
 		public function setActive(bool $active) {
 			$this->active = $active;
-		}
-		public function setId_users(int $id_users) {
-			$this->id_users = $id_users;
 		}
 		public function setId_dishes_types(int $id_dishes_types) {
 			$this->id_dishes_types = $id_dishes_types;
@@ -59,9 +54,6 @@
 		public function getActive():bool {
 			return $this->active;
 		}
-		public function getId_users():int {
-			return $this->id_users;
-		}
 		public function getId_dishes_types():int {
 			return $this->id_dishes_types;
 		}
@@ -73,8 +65,8 @@
 		 */
 		public function create() {
 			$query = 
-			"INSERT INTO `dishes` (`title`, `price`, `description`, `active`, `id_users`, `id_dishes_types`, `image`, `togo`) 
-			VALUES (:title, :price, :description, :active, :id_users, :id_dishes_types, :image, :togo);";
+			"INSERT INTO `dishes` (`title`, `price`, `description`, `active`, `id_dishes_types`, `image`, `togo`) 
+			VALUES (:title, :price, :description, :active, :id_dishes_types, :image, :togo);";
 
 			$sth = $this->pdo->prepare($query);
 
@@ -84,7 +76,6 @@
 			$sth->bindValue(':active', $this->active, PDO::PARAM_BOOL);
 			$sth->bindValue(':image', $this->image, PDO::PARAM_INT);
 			$sth->bindValue(':togo', $this->togo, PDO::PARAM_BOOL);
-			$sth->bindValue(':id_users', $this->id_users, PDO::PARAM_INT);
 			$sth->bindValue(':id_dishes_types', $this->id_dishes_types, PDO::PARAM_INT);
 
 			if($sth->execute()) {
@@ -177,7 +168,7 @@
 		public function update($id):bool {
 			$query = 
 			"UPDATE `dishes` 
-			SET `title` = :title, `price` = :price, `description` = :description, `active` = :active, `id_users` = :id_users, `id_dishes_types` = :id_dishes_types, `image` = :image 
+			SET `title` = :title, `price` = :price, `description` = :description, `active` = :active, `id_dishes_types` = :id_dishes_types, `image` = :image 
 			WHERE `id` = :id;";
 
 			$sth = $this->pdo->prepare($query);
@@ -187,7 +178,6 @@
 			$sth->bindValue(':description', $this->description);
 			$sth->bindValue(':active', $this->active, PDO::PARAM_INT);
 			$sth->bindValue(':image', $this->image, PDO::PARAM_INT);
-			$sth->bindValue(':id_users', $this->id_users, PDO::PARAM_INT);
 			$sth->bindValue(':id_dishes_types', $this->id_dishes_types, PDO::PARAM_INT);
 			$sth->bindValue(':id', $id, PDO::PARAM_INT);
 
@@ -265,7 +255,7 @@
 			$query = "SELECT `id` FROM `dishes_types` ORDER BY `id` ASC LIMIT 1;";
 
 			if($sth = $pdo->query($query)) {
-				return $sth->fetch()->id ?? false;
+				return $sth->fetch()->id;
 			}
 			return false;
 		}

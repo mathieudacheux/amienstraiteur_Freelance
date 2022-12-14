@@ -25,7 +25,7 @@ any('/oubli-mot-de-passe', 'controllers/forgotPwdCtrl.php');
 // ############################
 
 // Menu
-get('/admin/', 'controllers/admin/dbDishesCtrl.php');
+get('/admin', 'controllers/admin/dbDishesCtrl.php');
 get('/admin/menu', 'controllers/admin/dbDishesCtrl.php');
 // Ajout d'un plat
 any('/admin/menu/ajout', 'controllers/admin/dbDishesCtrl.php');
