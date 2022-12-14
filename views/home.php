@@ -427,32 +427,38 @@
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
                             <div class="col-md-12 form-group">
-                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Téléphone">
+                                <input type="number" class="form-control" id="phoneNumber" name="phone" placeholder="Téléphone">
                             </div>
                             <div class="col-md-6 form-group">
-                                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Date" />
-                                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
-                                        <div class="input-group-text">
-                                            <span class="lnr lnr-calendar-full"></span>
-                                        </div>
-                                    </div>
+                                <div class="input-group date" data-target-input="nearest">
+                                    <input type="date" name="date" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Date" />
                                 </div>
                             </div>
 
                             <div class="col-md-6 form-group">
-                                <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3" placeholder="Heure" />
-                                    <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                        <div class="input-group-text">
-                                            <span class="lnr lnr-clock"></span>
-                                        </div>
-                                    </div>
-                                </div>
+                                <select class="form-control" id="selectHour" name="hour">
+                                    <option>Horaire</option>
+                                    <option>9:00</option>
+                                    <option>9:30</option>
+                                    <option>10:00</option>
+                                    <option>10:30</option>
+                                    <option>11:00</option>
+                                    <option>11:30</option>
+                                    <option>12:00</option>
+                                    <option>12:30</option>
+                                    <option>14:00</option>
+                                    <option>14:30</option>
+                                    <option>15:00</option>
+                                    <option>15:30</option>
+                                    <option>16:00</option>
+                                    <option>16:30</option>
+                                    <option>17:00</option>
+                                    <option>17:30</option>
+                                </select>
                             </div>
 
                             <div class="col-md-12 form-group">
-                                <select class="form-control" id="selectPerson">
+                                <select class="form-control" id="selectPerson" name="persons">
                                     <option>Nombres de personnes</option>
                                     <option>8</option>
                                     <option>9</option>
@@ -471,7 +477,7 @@
                                     <option>Sur Mesure</option>
                                 </select>
                             </div>
-                 
+
                             <div class="col-md-12 form-group">
                                 <textarea class="form-control" id="message" name="message" rows="6" placeholder="Décrivrez-nous votre événement"></textarea>
                             </div>
@@ -486,3 +492,8 @@
         </div>
     </div>
 </section>
+<script>
+    $('#datetimepicker3').datetimepicker({
+        format: 'yyyy/mm/dd'
+    });
+</script>
