@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Amiens traiteur</title>
-    <meta name="description" content="Resto">
+    <meta name="description" content="Notre traiteur à Amiens vous offre des plats délicieux et élaborés avec soin pour tous vos événements, qu'il s'agisse d'un mariage, d'un anniversaire ou d'une réception d'entreprise. Nous utilisons des ingrédients frais et de qualité pour créer des mets qui raviront les papilles de vos invités.">
+    <link rel="shortcut icon" href="/public/assets/icons/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- External CSS -->
@@ -22,6 +23,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/style.min.css">
+    <link rel="stylesheet" href="/public/css/main.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>

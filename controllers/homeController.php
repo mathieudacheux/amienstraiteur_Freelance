@@ -12,10 +12,12 @@ require_once(__DIR__ . '/../config/regex.php');
 require_once(__DIR__ . '/../helpers/testInputs.php');
 
 // Appel des classes
-
-// Appel des fonctions
+require_once(__DIR__.'/../models/Dish.php');
 
 // Variables
+$starters = Dish::getLast('starters');
+$dishes = Dish::getLast('dishes');
+$desserts = Dish::getLast('desserts');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 

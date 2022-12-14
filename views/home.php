@@ -68,24 +68,14 @@
                         <p>Situé à Amiens et desservant toute la région, vous propose des plats savoureux pour tous vos événements. Que vous cherchiez une solution clé en main pour un mariage, un anniversaire, une réception d'entreprise ou tout autre occasion spéciale, nous avons ce qu'il vous faut.</p>
                         <h3 class="mt-5">Menus favoris</h3>
                         <div class="row">
-                            <div class="col-4">
-                                <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="../public/assets/img/hero-1.jpg" />
-                                    <h6>Australian Organic Beef</h6>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="../public/assets/img/hero-1.jpg" />
-                                    <h6>Australian Organic Beef</h6>
-                                </a>
-                            </div>
-                            <div class="col-4">
-                                <a href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src="../public/assets/img/hero-1.jpg"/>
-                                    <h6>Australian Organic Beef</h6>
-                                </a>
-                            </div>
+                            <?php foreach ($dishes as $element) : ?>
+                                <div class="col-4">
+                                    <p href="#" class="thumb-menu">
+                                    <img class="img-fluid img-cover" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
+                                        <h6><?= $element->title ?></h6>
+                                    </p>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -165,162 +155,77 @@
                     <div class="heading-menu">
                         <h3 class="text-center mb-5">Entrées</h3>
                     </div>
-                    
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                    <?php foreach ($starters as $element) : ?>
+                        <div class="menus d-flex align-items-center">
+                            <div class="menu-img rounded-circle">
+                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
                             </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                            <div class="text-wrap">
+                                <div class="row align-items-start">
+                                    <div class="col-8">
+                                        <h4><?= $element->title ?></h4>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-muted menu-price"><?= $element->price ?>€</h4>
+                                    </div>
                                 </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                                <p><?= $element->description ?></p>
                             </div>
-                            <p>Meat Ball, Mie</p>
                         </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
 
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
                         <h3 class="text-center mb-5">Plats</h3>
                     </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                    <?php foreach ($dishes as $element) : ?>
+                        <div class="menus d-flex align-items-center">
+                            <div class="menu-img rounded-circle">
+                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
                             </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                            <div class="text-wrap">
+                                <div class="row align-items-start">
+                                    <div class="col-8">
+                                        <h4><?= $element->title ?></h4>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-muted menu-price"><?= $element->price ?>€</h4>
+                                    </div>
                                 </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                                <p><?= $element->description ?></p>
                             </div>
-                            <p>Meat Ball, Mie</p>
                         </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
 
                 <div class="col-lg-4 menu-wrap">
                     <div class="heading-menu">
                         <h3 class="text-center mb-5">Desserts</h3>
                     </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                    <?php foreach ($desserts as $element) : ?>
+                        <div class="menus d-flex align-items-center">
+                            <div class="menu-img rounded-circle">
+                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
                             </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
+                            <div class="text-wrap">
+                                <div class="row align-items-start">
+                                    <div class="col-8">
+                                        <h4><?= $element->title ?></h4>
+                                    </div>
+                                    <div class="col-4">
+                                        <h4 class="text-muted menu-price"><?= $element->price ?>€</h4>
+                                    </div>
                                 </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
+                                <p><?= $element->description ?></p>
                             </div>
-                            <p>Meat Ball, Mie</p>
                         </div>
-                    </div>
-                    <div class="menus d-flex align-items-center">
-                        <div class="menu-img rounded-circle">
-                            <img class="img-fluid" src="../public/assets/img/breakfast-1.jpg" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="row align-items-start">
-                                <div class="col-8">
-                                    <h4>Egg Sandwich</h4>
-                                </div>
-                                <div class="col-4">
-                                    <h4 class="text-muted menu-price">$30</h4>
-                                </div>
-                            </div>
-                            <p>Meat Ball, Mie</p>
-                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <!-- add button view more -->
+                <div class="col-12">
+                    <div class="text-center mt-5">
+                        <a href="/menu" class="btn btn-primary btn-outline-primary btn-lg">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -366,10 +271,10 @@
         <div class="section-content">
             <div class="heading-section text-center">
                 <span class="subheading">
-                    Specialties
+                    Amiens traiteur
                 </span>
                 <h2>
-                    Our Team
+                    Notre équipe
                 </h2>
             </div>
             <div class="row">

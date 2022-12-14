@@ -1,12 +1,13 @@
 <?php
 
-// Appel des configurations
-
 // Appel des classes
+require_once(__DIR__.'/../models/Dish.php');
 
 // Appel des fonctions
 
 // Variables
+$typesOfDishes = Dish::dishTypes();
+$firstDishType = Dish::firstDishType();
 
 // Appel des vues
 
