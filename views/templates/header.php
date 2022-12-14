@@ -22,6 +22,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/style.min.css">
+    <link rel="stylesheet" href="/public/css/main.css">
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
