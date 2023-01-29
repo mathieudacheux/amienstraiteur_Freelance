@@ -13,11 +13,15 @@ require_once(__DIR__ . '/../helpers/testInputs.php');
 
 // Appel des classes
 require_once(__DIR__.'/../models/Dish.php');
+require_once(__DIR__.'/../models/Team.php');
 
 // Variables
+$carrousel = array_slice(scandir($_SERVER['DOCUMENT_ROOT']."/public/assets/carrousel"), 2);
+
 $starters = Dish::getLast('starters');
 $dishes = Dish::getLast('dishes');
 $desserts = Dish::getLast('desserts');
+$team = Team::getAll();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
