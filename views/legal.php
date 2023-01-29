@@ -11,9 +11,9 @@
                     <h2>Amiens traiteur</h2>
                     <p class="pt-3">70 Rue des Jacobins, 80000 Amiens</p>
                     <p class="pt-3">03.60.60.69.25</p>
-                    <p class="pt-3">SARL VANDEKAMPp</p>
-                    <p class="pt-3">RCS : 789095098</p>
-                    <p class="pt-3">N° de TVA intracommunautaire : FR15789095098</p>
+                    <p class="pt-3">SAS Amiens Traiteur</p>
+                    <p class="pt-3">RCS : 919105288</p>
+                    <p class="pt-3">N° de TVA intracommunautaire : FR8919105288</p>
 		        </div>
             </div>
             <div class="row mt-12">
