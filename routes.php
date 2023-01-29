@@ -24,6 +24,18 @@ any('/oubli-mot-de-passe', 'controllers/forgotPwdCtrl.php');
 // Gestion du menu et des plats
 // ############################
 
+// Images du carrousel
+get('/admin/img', 'controllers/admin/dbImgCtrl.php');
+any('/admin/carrousel/edit/1', 'controllers/admin/dbImgCtrl.php');
+any('/admin/carrousel/edit/2', 'controllers/admin/dbImgCtrl.php');
+any('/admin/carrousel/edit/3', 'controllers/admin/dbImgCtrl.php');
+
+// Images de l'équipe
+get('/admin/equipe', 'controllers/admin/dbTeamCtrl.php');
+any('/admin/membre/edit/1', 'controllers/admin/dbTeamCtrl.php');
+any('/admin/membre/edit/2', 'controllers/admin/dbTeamCtrl.php');
+any('/admin/membre/edit/3', 'controllers/admin/dbTeamCtrl.php');
+
 // Menu
 get('/admin', 'controllers/admin/dbDishesCtrl.php');
 get('/admin/menu', 'controllers/admin/dbDishesCtrl.php');

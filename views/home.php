@@ -1,59 +1,59 @@
 <div class="hero">
-  <div class="container">
-	<div class="row d-flex align-items-center">
-		<div class="col-lg-6 hero-left">
-		    <h1 class="display-4 mb-5">Traiteur sur Amiens<br>et ses alentours</h1>
-		    <div class="mb-2">
-		    	<a class="btn btn-primary btn-shadow btn-lg" href="#gtco-menu" role="button">Nos plats</a>
-                <a class="btn btn-primary btn-shadow btn-lg mx-3" href="#gtco-reservation" role="button">Devis</a>
-		    </div>
-		   
-		    <ul class="hero-info list-unstyled d-flex text-center mb-0">
-                <li class="border-right">
-                    <span class="lnr lnr-leaf"></span>
-		    		<h5>
-                        Produits frais
-		    		</h5>
-		    	</li>
-                <li class="border-right">
-                    <span class="lnr lnr-rocket"></span>
-                    <h5>
-                        En Livraison
-                    </h5>
-                </li>
-		    	<li class="">
-		    		<span class="lnr lnr-bubble"></span>
-		    		<h5>
-		    			Contact direct
-		    		</h5>
-		    	</li>
-		    </ul>
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 hero-left">
+                <h1 class="display-4 mb-5">Traiteur sur Amiens<br>et ses alentours</h1>
+                <div class="mb-2">
+                    <a class="btn btn-primary btn-shadow btn-lg" href="#gtco-menu" role="button">Nos plats</a>
+                    <a class="btn btn-primary btn-shadow btn-lg mx-3" href="#gtco-reservation" role="button">Devis</a>
+                </div>
 
-	    </div>
-	    <div class="col-lg-6 hero-right">
-	    	<div class="owl-carousel owl-theme hero-carousel">
-			    <div class="item">
-			    	<img class="img-fluid" src="../public/assets/img/hero-1.jpg" alt="">
-			    </div>
-			    <div class="item">
-			    	<img class="img-fluid" src="../public/assets/img/hero-2.jpg" alt="">
-			    </div>
-			    <div class="item">
-			    	<img class="img-fluid" src="../public/assets/img/hero-3.jpg" alt="">
-			    </div>
-			</div>
-	    </div>
-	</div>
-  </div>
-</div>		
+                <ul class="hero-info list-unstyled d-flex text-center mb-0">
+                    <li class="border-right">
+                        <span class="lnr lnr-leaf"></span>
+                        <h5>
+                            Produits frais
+                        </h5>
+                    </li>
+                    <li class="border-right">
+                        <span class="lnr lnr-rocket"></span>
+                        <h5>
+                            En Livraison
+                        </h5>
+                    </li>
+                    <li class="">
+                        <span class="lnr lnr-bubble"></span>
+                        <h5>
+                            Contact direct
+                        </h5>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-lg-6 hero-right">
+                <div class="owl-carousel owl-theme hero-carousel">
+                    <?php
+                    foreach ($carrousel as $img) {
+                    ?>
+                        <div class="item">
+                            <img class="img-fluid" src="../public/assets/carrousel/<?= $img ?>" alt="">
+                        </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Welcome Section -->
 <section id="gtco-welcome" class="bg-white section-padding">
     <div class="container">
         <div class="section-content">
             <div class="row">
-                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(../public/assets/img/eventsForAll.jpg);">
-                    
+                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(../public/assets/presentation/img.jpg);">
+
                 </div>
                 <div class="col-sm-7 py-5 pl-md-0 pl-4">
                     <div class="heading-section pl-lg-5 ml-md-5">
@@ -71,8 +71,8 @@
                             <?php foreach ($dishes as $element) : ?>
                                 <div class="col-4">
                                     <p href="#" class="thumb-menu">
-                                    <img class="img-fluid img-cover" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
-                                        <h6><?= $element->title ?></h6>
+                                        <img class="img-fluid img-cover" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
+                                    <h6><?= $element->title ?></h6>
                                     </p>
                                 </div>
                             <?php endforeach; ?>
@@ -83,7 +83,7 @@
         </div>
     </div>
 </section>
-<!-- End of Welcome Section -->		<!-- Special Dishes Section -->
+<!-- End of Welcome Section --> <!-- Special Dishes Section -->
 <section id="gtco-special-dishes" class="bg-grey section-padding">
     <div class="container">
         <div class="section-content">
@@ -104,12 +104,12 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                    <img src="../public/assets/img/forAll.jpg" alt="Une table d'événement préparées pour accueillir un grand nombre de personnes" class="img-fluid shadow w-100">
+                    <img src="../public/assets/services/1.jpg" alt="Une table d'événement préparées pour accueillir un grand nombre de personnes" class="img-fluid shadow w-100">
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
-                    <img src="../public/assets/img/homeMade.jpg" alt="" class="img-fluid shadow w-100">
+                    <img src="../public/assets/services/2.jpg" alt="" class="img-fluid shadow w-100">
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
                     <h2 class="special-number">02.</h2>
@@ -128,13 +128,13 @@
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                    <img src="../public/assets/img/delivery.jpg" alt="" class="img-fluid shadow w-100">
+                    <img src="../public/assets/services/3.jpg" alt="" class="img-fluid shadow w-100">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- End of Special Dishes Section -->		<!-- Menu Section -->
+<!-- End of Special Dishes Section --> <!-- Menu Section -->
 <section id="gtco-menu" class="section-padding">
     <div class="container">
         <div class="section-content">
@@ -147,7 +147,7 @@
                         <h2>
                             Nos menus
                         </h2>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -158,7 +158,7 @@
                     <?php foreach ($starters as $element) : ?>
                         <div class="menus d-flex align-items-center">
                             <div class="menu-img rounded-circle">
-                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
+                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
                             </div>
                             <div class="text-wrap">
                                 <div class="row align-items-start">
@@ -182,7 +182,7 @@
                     <?php foreach ($dishes as $element) : ?>
                         <div class="menus d-flex align-items-center">
                             <div class="menu-img rounded-circle">
-                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
+                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
                             </div>
                             <div class="text-wrap">
                                 <div class="row align-items-start">
@@ -206,7 +206,7 @@
                     <?php foreach ($desserts as $element) : ?>
                         <div class="menus d-flex align-items-center">
                             <div class="menu-img rounded-circle">
-                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/".strtolower(str_replace(' ', '', $element->id)).".jpg" : '/public/assets/baseImg/dish.jpg'?> alt="Photo de <?= $element->title ;?>">
+                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
                             </div>
                             <div class="text-wrap">
                                 <div class="row align-items-start">
@@ -232,7 +232,7 @@
         </div>
     </div>
 </section>
-<!-- End of menu Section -->		<!-- Testimonial Section-->
+<!-- End of menu Section --> <!-- Testimonial Section-->
 <section id="gtco-testimonial" class="overlay bg-fixed section-padding" style="background-image: url(../public/assets/img/testi-bg.jpg);">
     <div class="container">
         <div class="section-content">
@@ -265,7 +265,7 @@
         </div>
     </div>
 </section>
-<!-- End of Testimonial Section-->		<!-- Team Section -->
+<!-- End of Testimonial Section--> <!-- Team Section -->
 <section id="gtco-team" class="bg-white section-padding">
     <div class="container">
         <div class="section-content">
@@ -278,38 +278,26 @@
                 </h2>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="team-card mb-5">
-                        <img class="img-fluid" src="../public/assets/img/chef-1.jpg" alt="">
-                        <div class="team-desc">
-                            <h4 class="mb-0">John Doe</h4>
-                            <p class="mb-1">CEO</p>
+                <?php 
+                    foreach ($team as $id => $member) {
+                ?>
+                    <div class="col-md-4">
+                        <div class="team-card mb-5">
+                            <img class="img-fluid" src="../public/assets/team/<?=$id+1?>.jpg" alt="">
+                            <div class="team-desc">
+                                <h4 class="mb-0"><?= $member->firstname . ' ' . $member->lastname ?></h4>
+                                <p class="mb-1"><?= $member->post ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-card mb-5">
-                        <img class="img-fluid" src="../public/assets/img/chef-2.jpg" alt="">
-                        <div class="team-desc">
-                            <h4 class="mb-0">John Doe</h4>
-                            <p class="mb-1">Chef</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="team-card mb-5">
-                        <img class="img-fluid" src="../public/assets/img/chef-3.jpg" alt="">
-                        <div class="team-desc">
-                            <h4 class="mb-0">John Doe</h4>
-                            <p class="mb-1">Chef</p>
-                        </div>
-                    </div>
-                </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
     </div>
 </section>
-<!-- End of Team Section -->		<!-- Reservation Section -->
+<!-- End of Team Section --> <!-- Reservation Section -->
 <section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(../public/assets/img/reservation-bg.jpg);">
     <div class="container">
         <div class="row">

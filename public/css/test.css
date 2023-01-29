@@ -1349,6 +1349,10 @@ button:hover {
 	width: 80%;
 }
 
+.bannerForm button {
+	margin-bottom: 4rem;
+}
+
 .bannerForm label {
 	margin-top: 3rem;
 	text-align: center;
@@ -1360,7 +1364,38 @@ button:hover {
 }
 
 .bannerPreview {
-	width: 60%;
-	height: 300px;
+	width: 270px;
+	height: calc(50vh - 75px);
 	object-fit: cover;
+}
+
+.carrouselContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 60%;
+}
+
+.teamInfo {
+	width: 30%;
+	margin-top: 3rem;
+}
+
+.teamInfo form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.teamInfo form label {
+	margin-top: 0.5rem;
+	/* color: #A57D5C; */
+	font-weight: 800;
+	font-size: 1.3rem;
+}
+
+.teamInfo form input {
+	text-align: center;
 }

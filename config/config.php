@@ -4,8 +4,8 @@ define('HEAD_TITLE', ['', '', '', '', '']);
 define('HEAD_DESCRIPTION', ['', '', '', '', '']);
 
 define('DSN', 'mysql:host=localhost;dbname=amienstraiteur;charset=utf8');
-define('USER', 'Twinkloose');
-define('PWD', 'BlackOPS80*');
+define('USER', 'root');
+define('PWD', '');
 
 // define('DSN', 'mysql:host=127.0.0.1:3306;dbname=u993442228_adresse;charset=utf8');
 // define('USER', 'u993442228_admin');

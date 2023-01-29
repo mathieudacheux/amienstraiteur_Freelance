@@ -10,9 +10,9 @@ require_once(__DIR__ . '/../../helpers/SessionFlash.php');
 // 	header('Location: /');
 // 	exit;
 // }
-$user = new stdClass();
-$user->id = 7;
-$_SESSION['user'] = $user;
+// $user = new stdClass();
+// $user->id = 7;
+// $_SESSION['user'] = $user;
 
 // ###############################################################################
 // ###                         AFFICHAGE DU DASHBOARD                          ###	
