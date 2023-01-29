@@ -13,7 +13,7 @@ any('/commande', 'controllers/orderController.php');
 
 
 // Connexion
-any('/connexion', 'controllers/connectionCtrl.php');
+any('/connexion', 'controllers/admin/connexionCtrl.php');
 // Déconnexion
 get('/disconnect', 'controllers/disconnectCtrl.php');
 // Mot de passe oublié

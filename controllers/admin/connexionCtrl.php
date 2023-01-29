@@ -1,7 +1,7 @@
 <?php
 
 // Appel des classes
-require_once(__DIR__ . '/../models/Admin.php');
+require_once(__DIR__ . '/../../models/Admin.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupération des données du formulaire
@@ -15,11 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $passwordVerification = password_verify($password, $admin);
         if ($passwordVerification === true) {
             header('Location: /admin');
+            exit;
         }
+        header('Location: /accueil');
+        exit;
     }
 }
 
 // Appel des vues
-include(__DIR__ . '/../views/templates/header.php');
-include(__DIR__ . '/../views/connexion.php');
-include(__DIR__ . '/../views/templates/footer.php');
+include(__DIR__ . '/../../views/templates/header.php');
+include(__DIR__ . '/../../views/connexion.php');
+include(__DIR__ . '/../../views/templates/footer.php');

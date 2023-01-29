@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12 d-flex justify-content-center" style="height: 100vh;">
         <div class="col-md-4 col-md-offset-4">
-            <form action="index.php" method="post">
+            <form action="/connexion" method="post">
                 <div class="form-group">
                     <label for="login">Adresse-mail</label>
                     <input type="text" class="form-control" id="login" name="login" placeholder="Login">
