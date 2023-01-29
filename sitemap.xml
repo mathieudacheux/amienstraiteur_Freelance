@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.amienstraiteur.com</loc>
+		<priority>1.00</priority>
+		<lastmod>2023-01-15</lastmod>
+	</url>
+	<url>
+		<url>
+		<loc>https://www.amienstraiteur.com/commandes</loc>
+		<priority>0.90</priority>
+		<lastmod>2023-01-15</lastmod>
+	</url>
+	<url>
+		<url>
+		<loc>https://www.amienstraiteur.com/plats</loc>
+		<priority>0.90</priority>
+		<lastmod>2023-01-15</lastmod>
+	</url>
+	<url>
+		<url>
+		<loc>https://www.amienstraiteur.com/galerie</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-01-15</lastmod>
+	</url>
+	<url>
+		<url>
+		<loc>https://www.amienstraiteur.com/commentaires</loc>
+		<priority>0.80</priority>
+		<lastmod>2023-01-15</lastmod>
+	</url>
+</urlset>
