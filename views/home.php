@@ -283,7 +283,7 @@
                         <img class="img-fluid" src="../public/assets/img/chef-1.jpg" alt="">
                         <div class="team-desc">
                             <h4 class="mb-0">John Doe</h4>
-                            <p class="mb-1">CEO</p>
+                            <p class="mb-1">Co-directeur</p>
                         </div>
                     </div>
                 </div>
@@ -292,7 +292,7 @@
                         <img class="img-fluid" src="../public/assets/img/chef-2.jpg" alt="">
                         <div class="team-desc">
                             <h4 class="mb-0">John Doe</h4>
-                            <p class="mb-1">Chef</p>
+                            <p class="mb-1">Co-directeur</p>
                         </div>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
                         <img class="img-fluid" src="../public/assets/img/chef-3.jpg" alt="">
                         <div class="team-desc">
                             <h4 class="mb-0">John Doe</h4>
-                            <p class="mb-1">Chef</p>
+                            <p class="mb-1">Chef cuisinier</p>
                         </div>
                     </div>
                 </div>
