@@ -14,6 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $admin = Admin::passwordVerification($login);
         $passwordVerification = password_verify($password, $admin);
         if ($passwordVerification === true) {
+            // Création de la session
+            $_SESSION['user'] = $login;
             header('Location: /admin');
             exit;
         }
