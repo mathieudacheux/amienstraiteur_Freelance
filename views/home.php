@@ -225,7 +225,7 @@
                 <!-- add button view more -->
                 <div class="col-12">
                     <div class="text-center mt-5">
-                        <a href="/menu" class="btn btn-primary btn-outline-primary btn-lg">Voir plus</a>
+                        <a href="/plats" class="btn btn-primary btn-outline-primary btn-lg">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -278,12 +278,12 @@
                 </h2>
             </div>
             <div class="row">
-                <?php 
-                    foreach ($team as $id => $member) {
+                <?php
+                foreach ($team as $id => $member) {
                 ?>
                     <div class="col-md-4">
                         <div class="team-card mb-5">
-                            <img class="img-fluid" src="../public/assets/team/<?=$id+1?>.jpg" alt="">
+                            <img class="img-fluid" src="../public/assets/team/<?= $id + 1 ?>.jpg" alt="">
                             <div class="team-desc">
                                 <h4 class="mb-0"><?= $member->firstname . ' ' . $member->lastname ?></h4>
                                 <p class="mb-1"><?= $member->post ?></p>
@@ -291,7 +291,7 @@
                         </div>
                     </div>
                 <?php
-                    }
+                }
                 ?>
             </div>
         </div>

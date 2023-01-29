@@ -28,7 +28,7 @@
 						<li class="d-flex justify-content-between"><span>Jeudi</span><span>9:00 - 20:00</span></li>
 						<li class="d-flex justify-content-between"><span>Vendredi</span><span>9:00 - 20:00</span></li>
 						<li class="d-flex justify-content-between"><span>Samedi</span><span>9:00 - 20:00</span></li>
-						<li class="d-flex justify-content-between"><span>Dimanche</span><span> Closed</span></li>
+						<li class="d-flex justify-content-between"><span>Dimanche</span><span>Fermé</span></li>
 					</ul>
 				</div>
 
