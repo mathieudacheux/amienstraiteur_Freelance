@@ -1,12 +1,13 @@
 <?php
 
-require_once __DIR__.'/router.php';
+require_once __DIR__ . '/router.php';
 any('/accueil', 'controllers/homeController.php');
 any('/', 'controllers/homeController.php');
 any('/plats', 'controllers/dishesController.php');
 any('/commentaires', 'controllers/reviewCtrl.php');
 any('/galerie', 'controllers/galeryCtrl.php');
 any('/getDishesAjax', 'helpers/ajax/dishes.php');
+any('/legal', 'controllers/legalController.php');
 
 // Page de commande
 any('/commande', 'controllers/orderController.php');
@@ -104,4 +105,4 @@ any('/demande-devis', 'controllers/orderFormCtrl.php');
 
 get('/cgu', 'controllers/cguCtrl.php');
 // Page not found
-any('/404','/404.php');
+any('/404', '/404.php');

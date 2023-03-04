@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,78 +30,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
+
 <body data-spy="scroll" data-target="#navbar" class="static-layout">
-	<div id="side-nav" class="sidenav">
-	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
-	
-	<div class="sidenav-content">
-		<p>
-			70 Rue des Jacobins, 80000 Amiens
-		</p>
-		<p>
-			<span class="fs-16 primary-color">03 60 60 49 41</span>
-		</p>
-		<p>contact@amiens-traiteur.com</p>
-	</div>
-</div>	
-<div id="side-search" class="sidenav">
-	<a href="javascript:void(0)" id="side-search-close">&times;</a>
-	<div class="sidenav-content">
-		<form action="">
+    <div id="side-nav" class="sidenav">
+        <a href="javascript:void(0)" id="side-nav-close">&times;</a>
 
-			<div class="input-group md-form form-sm form-2 pl-0">
-			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
-			  <div class="input-group-append">
-			    <button class="input-group-text red lighten-3" id="basic-text1">
-			    	<i class="fas fa-search text-grey" aria-hidden="true"></i>
-			    </button>
-			  </div>
-			</div>
-
-		</form>
-	</div>
-	
- 	
-</div>	
-<div id="canvas-overlay"></div>
-	<div class="boxed-page">
-		<nav id="navbar-header" class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand col-3 p-0 only-mobile" href="/controllers/homeController.php">
-            <img src="../public/assets/icons/logoMobile.png" alt="Logo de l'entreprise Amiens Traiteur">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-menu"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex justify-content-between">
-                <li class="nav-item only-desktop">
-                    <a class="nav-link" id="side-nav-open" href=""></a>
-                </li>
-                <div class="d-flex flex-lg-row flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/plats">Plats</a>
-                    </li>
-                </div>
-            </ul>
-            
-            <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="/controllers/homeController.php">
-                <img src="../public/assets/icons/logo.png" alt="Logo de l'entreprise Amiens Traiteur">
-            </a>
-            <ul class="navbar-nav d-flex justify-content-between">
-                <div class="d-flex flex-lg-row flex-column">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/commande">Commander</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/accueil#gtco-reservation">Contact</a>
-                    </li>
-                </div>
-            </ul>
+        <div class="sidenav-content">
+            <p>
+                70 Rue des Jacobins, 80000 Amiens
+            </p>
+            <p>
+                <span class="fs-16 primary-color">03 60 60 49 41</span>
+            </p>
+            <p>contact@amiens-traiteur.com</p>
         </div>
     </div>
-</nav>
+    <div id="side-search" class="sidenav">
+        <a href="javascript:void(0)" id="side-search-close">&times;</a>
+        <div class="sidenav-content">
+            <form action="">
+
+                <div class="input-group md-form form-sm form-2 pl-0">
+                    <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="input-group-text red lighten-3" id="basic-text1">
+                            <i class="fas fa-search text-grey" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+    <div id="canvas-overlay"></div>
+    <div class="boxed-page">
+        <nav id="navbar-header" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand col-3 p-0 only-mobile" href="/controllers/homeController.php">
+                    <img src="../public/assets/icons/logoMobile.png" alt="Logo de l'entreprise Amiens Traiteur">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lnr lnr-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex justify-content-between">
+                        <li class="nav-item only-desktop">
+                            <a class="nav-link" id="side-nav-open" href=""></a>
+                        </li>
+                        <div class="d-flex flex-lg-row flex-column">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/plats">Nos produits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/accueil#gtco-special-dishes">Nos engagements</a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="/controllers/homeController.php">
+                        <img src="../public/assets/icons/logo.png" alt="Logo de l'entreprise Amiens Traiteur">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-between">
+                        <div class="d-flex flex-lg-row flex-column">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/commande">Devis</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/accueil#gtco-reservation">Contact</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>

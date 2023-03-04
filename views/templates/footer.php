@@ -45,7 +45,7 @@
 			</div>
 			<div class="col-md-12 d-flex align-items-center">
 				<p class="mx-auto text-center mb-0">Copyright 2022 - Amiens Traiteur</p>
-				<p class="mx-auto text-center mb-0"><a href="/controllers/legalController.php">Mentions Légales</a></p>
+				<p class="mx-auto text-center mb-0"><a href="/legal">Mentions Légales</a></p>
 			</div>
 
 		</div>
