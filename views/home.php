@@ -12,19 +12,19 @@
                     <li class="border-right">
                         <span class="lnr lnr-leaf"></span>
                         <h5>
-                            Produits frais
+                            Produits locaux
                         </h5>
                     </li>
                     <li class="border-right">
                         <span class="lnr lnr-rocket"></span>
                         <h5>
-                            En Livraison
+                            Faits maison
                         </h5>
                     </li>
                     <li class="">
                         <span class="lnr lnr-bubble"></span>
                         <h5>
-                            Contact direct
+                            Emballages écologiques
                         </h5>
                     </li>
                 </ul>
@@ -36,7 +36,7 @@
                     foreach ($carrousel as $img) {
                     ?>
                         <div class="item">
-                            <img class="img-fluid" src="../public/assets/carrousel/<?= $img ?>" alt="">
+                            <img class="img-fluid" src="../public/assets/carrousel/<?= $img ?>" alt="Image des différents plats proposés par Amiens Traiteur">
                         </div>
                     <?php
                     }
