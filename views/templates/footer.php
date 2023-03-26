@@ -6,12 +6,12 @@
 					<img src="../public/assets/icons/logo.png" class="img-fluid footer-logo mb-3" alt="">
 					<p>70 Rue des Jacobins, 80000 Amiens</p>
 					<p>Amiens Traiteur</p>
-					<p><a href="tel:0360604941">03 60 60 49 41</a></p>
+					<p><a href="tel:0610828322">06 10 82 83 22</a></p>
 					<nav class="nav nav-mastfoot justify-content-start">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="https://www.facebook.com/profile.php?id=100086927919390">
 							<i class="fab fa-facebook-f"></i>
 						</a>
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="https://www.instagram.com/amiens_traiteur/?hl=fr">
 							<i class="fab fa-instagram"></i>
 						</a>
 					</nav>
@@ -28,7 +28,7 @@
 						<li class="d-flex justify-content-between"><span>Jeudi</span><span>9:00 - 20:00</span></li>
 						<li class="d-flex justify-content-between"><span>Vendredi</span><span>9:00 - 20:00</span></li>
 						<li class="d-flex justify-content-between"><span>Samedi</span><span>9:00 - 20:00</span></li>
-						<li class="d-flex justify-content-between"><span>Dimanche</span><span>Fermé</span></li>
+						<li class="d-flex justify-content-between"><span>Dimanche</span><span>9:00 - 20:00</span></li>
 					</ul>
 				</div>
 
