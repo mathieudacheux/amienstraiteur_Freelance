@@ -150,84 +150,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 menu-wrap">
-                    <div class="heading-menu">
-                        <h3 class="text-center mb-5">Entrées</h3>
-                    </div>
-                    <?php foreach ($starters as $element) : ?>
-                        <div class="menus d-flex align-items-center">
-                            <div class="menu-img rounded-circle">
-                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
-                            </div>
-                            <div class="text-wrap">
-                                <div class="row align-items-start">
-                                    <div class="col-8">
-                                        <h4><?= $element->title ?></h4>
-                                    </div>
-                                    <div class="col-4">
-                                        <h4 class="text-muted menu-price"><?= $element->price ?>€</h4>
-                                    </div>
-                                </div>
-                                <p><?= $element->description ?></p>
+            <div class="row d-flex flex-wrap">
+                <?php for ($i = $firstDishType; $i < $typesOfDishes; $i++) : ?>
+                    <?php $dishTypeName = Dish::dishTypeName($i) ?>
+                    <div class="col-12 col-md-3 mx-auto mb-5">
+                        <div class="card mx-auto" style="height: 250px; width: 250px;">
+                            <img class="card-img-top" src="img/salmon-zucchini.jpg" alt="Card image cap" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="card-body mx-auto"> 
+                                <a href="plats/#<?= $dishTypeName ?>"><h5 class="card-title"><?= $dishTypeName ?></h5></a>
                             </div>
                         </div>
-                    <?php endforeach; ?>
-                </div>
-
-                <div class="col-lg-4 menu-wrap">
-                    <div class="heading-menu">
-                        <h3 class="text-center mb-5">Plats</h3>
                     </div>
-                    <?php foreach ($dishes as $element) : ?>
-                        <div class="menus d-flex align-items-center">
-                            <div class="menu-img rounded-circle">
-                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
-                            </div>
-                            <div class="text-wrap">
-                                <div class="row align-items-start">
-                                    <div class="col-8">
-                                        <h4><?= $element->title ?></h4>
-                                    </div>
-                                    <div class="col-4">
-                                        <h4 class="text-muted menu-price"><?= $element->price ?>€</h4>
-                                    </div>
-                                </div>
-                                <p><?= $element->description ?></p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-
-                <div class="col-lg-4 menu-wrap">
-                    <div class="heading-menu">
-                        <h3 class="text-center mb-5">Desserts</h3>
-                    </div>
-                    <?php foreach ($desserts as $element) : ?>
-                        <div class="menus d-flex align-items-center">
-                            <div class="menu-img rounded-circle">
-                                <img class="img-fluid" src=<?= ($element->image == 2) ? "/public/assets/galery/" . strtolower(str_replace(' ', '', $element->id)) . ".jpg" : '/public/assets/baseImg/dish.jpg' ?> alt="Photo de <?= $element->title; ?>">
-                            </div>
-                            <div class="text-wrap">
-                                <div class="row align-items-start">
-                                    <div class="col-8">
-                                        <h4><?= $element->title ?></h4>
-                                    </div>
-                                    <div class="col-4">
-                                        <h4 class="text-muted menu-price"><?= $element->price ?>€</h4>
-                                    </div>
-                                </div>
-                                <p><?= $element->description ?></p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-                <!-- add button view more -->
-                <div class="col-12">
-                    <div class="text-center mt-5">
-                        <a href="/plats" class="btn btn-primary btn-outline-primary btn-lg">Voir plus</a>
-                    </div>
-                </div>
+                <?php endfor; ?>
             </div>
         </div>
     </div>
