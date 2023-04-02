@@ -68,7 +68,7 @@
     <div class="boxed-page">
         <nav id="navbar-header" class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand col-3 p-0 only-mobile" href="/controllers/homeController.php">
+                <a class="navbar-brand col-3 p-0 only-mobile" href="/accueil">
                     <img src="../public/assets/icons/logoMobile.png" alt="Logo de l'entreprise Amiens Traiteur">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
