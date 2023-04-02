@@ -4,7 +4,7 @@
             <div class="col-lg-6 hero-left">
                 <h1 class="display-4 mb-5">Traiteur sur Amiens<br>et ses alentours</h1>
                 <div class="mb-2">
-                    <a class="btn btn-primary btn-shadow btn-lg" href="#gtco-menu" role="button">Nos plats</a>
+                    <a class="btn btn-primary btn-shadow btn-lg" href="#gtco-menu" role="button">Nos produits</a>
                     <a class="btn btn-primary btn-shadow btn-lg mx-3" href="#gtco-reservation" role="button">Devis</a>
                 </div>
 

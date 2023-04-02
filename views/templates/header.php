@@ -90,7 +90,7 @@
                         </div>
                     </ul>
 
-                    <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="/controllers/homeController.php">
+                    <a class="navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="/accueil">
                         <img src="../public/assets/icons/logo.png" alt="Logo de l'entreprise Amiens Traiteur">
                     </a>
                     <ul class="navbar-nav d-flex justify-content-between">
