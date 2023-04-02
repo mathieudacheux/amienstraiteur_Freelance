@@ -260,4 +260,16 @@
 			}
 			return false;
 		}
+
+		// Méthode pour récupérer le dernier plat ajouté dans un catégorie
+		public static function getLastCategoryDish():array|false {
+			$pdo = Database::getInstance();
+
+			$query = "SELECT * FROM `dishes` WHERE `id` IN (SELECT MAX(`id`) FROM `dishes` GROUP BY `id_dishes_types`) ORDER BY `id_dishes_types` ASC;";
+
+			if($sth = $pdo->query($query)) {
+				return $sth->fetchAll();
+			}
+			return false;
+		}
 	}

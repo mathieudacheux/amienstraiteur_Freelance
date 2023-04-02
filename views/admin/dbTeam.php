@@ -1,5 +1,5 @@
 <div class="dishes">
-	<h1>MENU</h1>
+	<h1>Equipe</h1>
 
 	<div class="openBurger">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -9,7 +9,7 @@
 	</div>
 
 	<!-- code -->
-	<h2>Carrousel - 1</h2>
+	<h2>Equipe - 1</h2>
 	<div class="carrouselContainer">
 		<img class="bannerPreview" src="../../public/assets/team/1.jpg" alt="">
 
@@ -25,17 +25,17 @@
 				<button type="submit">Modifier le membre</button>
 			</form>
 		</div>
-		<form method="POST" action="/admin/equipe/edit/1" enctype="multipart/form-data" class="bannerForm">
+		<!-- <form method="POST" action="/admin/equipe/edit/1" enctype="multipart/form-data" class="bannerForm">
 			<label for="banner">
 				Ajoutez un fichier pour modifier les images de l'équipe
 			</label>
 			<input type="file" id="banner" name="img">
 
 			<button type="submit">Modifier l'image</button>
-		</form>
+		</form> -->
 	</div>
 
-	<h2>Carrousel - 2</h2>
+	<h2>Equipe - 2</h2>
 	<div class="carrouselContainer">
 		<img class="bannerPreview" src="../../public/assets/team/2.jpg" alt="">
 
@@ -52,17 +52,17 @@
 			</form>
 		</div>
 
-		<form method="POST" action="/admin/equipe/edit/2" enctype="multipart/form-data" class="bannerForm">
+		<!-- <form method="POST" action="/admin/equipe/edit/2" enctype="multipart/form-data" class="bannerForm">
 			<label for="banner">
 				Ajoutez un fichier pour modifier les images de l'équipe
 			</label>
 			<input type="file" id="banner" name="img">
 
 			<button type="submit">Modifier l'image</button>
-		</form>
+		</form> -->
 	</div>
 
-	<h2>Carrousel - 3</h2>
+	<h2>Equipe - 3</h2>
 	<div class="carrouselContainer">
 		<img class="bannerPreview" src="../../public/assets/team/3.jpg" alt="">
 
@@ -79,14 +79,14 @@
 			</form>
 		</div>
 
-		<form method="POST" action="/admin/equipe/edit/3" enctype="multipart/form-data" class="bannerForm">
+		<!-- <form method="POST" action="/admin/equipe/edit/3" enctype="multipart/form-data" class="bannerForm">
 			<label for="banner">
 				Ajoutez un fichier pour modifier les images de l'équipe
 			</label>
 			<input type="file" id="banner" name="img">
 
 			<button type="submit">Modifier l'image</button>
-		</form>
+		</form> -->
 	</div>
 </div>
 <div class="modale">

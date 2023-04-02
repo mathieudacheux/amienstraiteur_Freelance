@@ -6,10 +6,10 @@ require_once(__DIR__ . '/../../helpers/SessionFlash.php');
 // ###                    TEST SI L'UTILISATEUR EST UN ADMIN                   ###	
 // ###############################################################################
 
-// if (!isset($_SESSION['user'])) {
-// 	header('Location: /');
-// 	exit;
-// }
+if (!isset($_SESSION['user'])) {
+	header('Location: /connexion');
+	exit;
+}
 // $user = new stdClass();
 // $user->id = 7;
 // $_SESSION['user'] = $user;

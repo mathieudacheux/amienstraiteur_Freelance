@@ -31,6 +31,18 @@ any('/admin/carrousel/edit/1', 'controllers/admin/dbImgCtrl.php');
 any('/admin/carrousel/edit/2', 'controllers/admin/dbImgCtrl.php');
 any('/admin/carrousel/edit/3', 'controllers/admin/dbImgCtrl.php');
 
+// Images des catégories
+get('/admin/gategoriesImg', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/1', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/2', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/3', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/4', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/5', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/6', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/7', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/8', 'controllers/admin/dbDishesCardsCtrl.php');
+any('/admin/dishCardImg/edit/9', 'controllers/admin/dbDishesCardsCtrl.php');
+
 // Images de l'équipe
 get('/admin/equipe', 'controllers/admin/dbTeamCtrl.php');
 any('/admin/membre/edit/1', 'controllers/admin/dbTeamCtrl.php');

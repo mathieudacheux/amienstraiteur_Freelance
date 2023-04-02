@@ -151,16 +151,19 @@
                 </div>
             </div>
             <div class="row d-flex flex-wrap">
-                <?php for ($i = $firstDishType; $i < $typesOfDishes; $i++) : ?>
+                <?php $count = 1;?>
+                <?php for ($i = $firstDishType; $i < $typesOfDishes + $firstDishType; $i++) : ?>
+
                     <?php $dishTypeName = Dish::dishTypeName($i) ?>
                     <div class="col-12 col-md-3 mx-auto mb-5">
                         <div class="card mx-auto" style="height: 250px; width: 250px;">
-                            <img class="card-img-top" src="img/salmon-zucchini.jpg" alt="Card image cap" style="height: 100%; width: 100%; object-fit: cover;">
+                            <img class="card-img-top" src="public/assets/dishCardImg/<?= $count ?>.jpg" alt="Card image cap" style="height: 100%; width: 100%; object-fit: cover;">
                             <div class="card-body mx-auto"> 
                                 <a href="plats/#<?= $dishTypeName ?>"><h5 class="card-title"><?= $dishTypeName ?></h5></a>
                             </div>
                         </div>
                     </div>
+                    <?php $count++; ?>
                 <?php endfor; ?>
             </div>
         </div>
